@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Shadows</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/global.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h3 class="header__title">Box Shadows</h3>
+
+      <div class="header__buttons">
+        <a href="#" class="button__github">
+          <img
+            src="./assets/images/github-mark.png"
+            alt="Github"
+            class="button__github-img"
+          />
+        </a>
+
+        <button class="button__show-code" type="button">Show code</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="customize">
+        <div class="customize__top">
+          <h3 class="customize__title">Customize Shadows</h3>
+
+          <button class="customize__button" type="button">Add a Shadow</button>
+        </div>
+
+        <div class="customize__body">
+          <button class="customize__toggle-button">
+            Shadow 1 <i class="fa-solid fa-angle-down"></i>
+          </button>
+
+          <div class="customize__checkbox-btn-container">
+            <div class="customize__checkbox-wrapper">
+              <input
+                type="checkbox"
+                name="active"
+                class="customize__checkbox"
+                id="active"
+              />
+              <label class="customize__checkbox-label" for="active"
+                >Active</label
+              >
+            </div>
+
+            <div class="customize__checkbox-wrapper">
+              <input
+                type="checkbox"
+                name="inset"
+                class="customize__checkbox"
+                id="inset"
+              />
+              <label class="customize__checkbox-label" for="inset"
+                >Active</label
+              >
+            </div>
+
+            <button class="customize__remove-btn" type="button">Remove</button>
+          </div>
+
+          <div class="range-controll-container">
+            <div class="range__txt-input-wrapper">
+              <p class="range__text">Horizontal offset</p>
+
+              <div class="range__input-wrapper">
+                <input type="text" class="range__input" />
+                <p class="range__txt range__txt-px">px</p>
+              </div>
+            </div>
+
+            <input
+              type="range"
+              class="range__input"
+              name="Horizontal"
+              id="horizontal"
+            />
+          </div>
+
+          <div class="range-controll-container">
+            <div class="range__txt-input-wrapper">
+              <p class="range__text">Vertical offset</p>
+
+              <div class="range__input-wrapper">
+                <input type="text" class="range__input" />
+                <p class="range__txt range__txt-px">px</p>
+              </div>
+            </div>
+
+            <input
+              type="range"
+              class="range__input"
+              name="Horizontal"
+              id="horizontal"
+            />
+          </div>
+
+          <div class="range-controll-container">
+            <div class="range__txt-input-wrapper">
+              <p class="range__text">Blur radius</p>
+
+              <div class="range__input-wrapper">
+                <input type="text" class="range__input" />
+                <p class="range__txt-px">px</p>
+              </div>
+            </div>
+
+            <input
+              type="range"
+              class="range__input"
+              name="Horizontal"
+              id="horizontal"
+            />
+          </div>
+
+          <div class="range-controll-container">
+            <div class="range__txt-input-wrapper">
+              <p class="range__text">Spread radius</p>
+
+              <div class="range__input-wrapper">
+                <input type="text" class="range__input" />
+                <p class="range__txt-px">px</p>
+              </div>
+            </div>
+
+            <input
+              type="range"
+              class="range__input"
+              name="Horizontal"
+              id="horizontal"
+            />
+          </div>
+
+          <div class="customize__color-input-container">
+            <div class="customize__input-wrapper">
+              <label for="colorInput" class="customize__color-input-label"
+                >Color</label
+              >
+
+              <input
+                type="text"
+                class="customize__color-input"
+                id="colorInput"
+              />
+            </div>
+
+            <input type="color" class="customize__select-color-input" />
+          </div>
+        </div>
+      </section>
+
+      <section class="display">
+        <div class="display__box"></div>
+      </section>
+
+      <section class="properties">
+        <h3 class="properties__title"></h3>
+
+        <div class="properties__input-container">
+          <div class="single-input-wrapper">
+            <p class="single-input__title">Canvas Color</p>
+            <input type="text" class="single__input" />
+          </div>
+
+          <div class="single-input-wrapper">
+            <p class="single-input__title">Background Color</p>
+            <input type="text" class="single__input" />
+          </div>
+
+          <div class="single-input-wrapper">
+            <p class="single-input__title">Border Color</p>
+            <input type="text" class="single__input" />
+          </div>
+        </div>
+
+        <div class="range-controll-container">
+          <div class="range__txt-input-wrapper">
+            <p class="range__text">Border radius</p>
+
+            <div class="range__input-wrapper">
+              <input type="text" class="range__input" />
+              <p class="range__txt range__txt-rem">rem</p>
+            </div>
+          </div>
+
+          <input
+            type="range"
+            class="range__input"
+            name="Horizontal"
+            id="horizontal"
+          />
+        </div>
+
+        <div class="range-controll-container">
+          <div class="range__txt-input-wrapper">
+            <p class="range__text">Height</p>
+
+            <div class="range__input-wrapper">
+              <input type="text" class="range__input" value="2" />
+              <p class="range__txt range__txt-rem">rem</p>
+            </div>
+          </div>
+
+          <input
+            type="range"
+            class="range__input"
+            name="Horizontal"
+            id="horizontal"
+          />
+        </div>
+
+        <div class="range-controll-container">
+          <div class="range__txt-input-wrapper">
+            <p class="range__text">Width</p>
+
+            <div class="range__input-wrapper">
+              <input type="text" class="range__input" />
+              <p class="range__txt range__txt-rem">rem</p>
+            </div>
+          </div>
+
+          <input
+            type="range"
+            class="range__input"
+            name="Horizontal"
+            id="horizontal"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
