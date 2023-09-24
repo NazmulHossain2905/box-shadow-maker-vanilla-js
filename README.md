@@ -1,7 +1,5 @@
 # Box Shadow Maker Vanilla Js
 
-## Contributor
-
 ## Contributors
 
 <!-- Contributors List -->
