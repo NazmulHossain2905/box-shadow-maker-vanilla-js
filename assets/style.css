@@ -421,6 +421,10 @@ main {
   font-weight: 600;
   background-color: #f9fafb;
   color: var(--primary-color);
+  &:hover {
+    background-color: var(--primary-color);
+    color: #f9fafb;
+  }
 }
 
 .modal__close {
@@ -440,6 +444,9 @@ main {
   background-color: var(--primary-color);
   color: var(--light-color);
   border: none;
+  &:hover {
+    background-color: #0056b3;
+  }
 }
 
 /* Modal styles ends here */
