@@ -1,5 +1,7 @@
 # Box Shadow Maker Vanilla Js
 
+## [How to Contribute?](CONTRIBUTION.md)
+
 ## Contributors
 
 <!-- Contributors List -->
